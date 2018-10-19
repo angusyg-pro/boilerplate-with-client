@@ -38,7 +38,8 @@ const formatMessage = (level, message, ...args) => {
       message: `${pre}${message}`,
       pid: process.pid,
     });
-  } else return `${moment().format('DD/MM/YYYY HH:mm:ss')} - ${level} - ${pre}${message}}`;
+  }
+  return `${moment().format('DD/MM/YYYY HH:mm:ss')} - ${level} - ${pre}${message}}`;
 };
 
 /**
