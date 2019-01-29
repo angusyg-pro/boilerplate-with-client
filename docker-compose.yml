@@ -1,0 +1,8 @@
+version: '3'
+services:
+  boilerplate-with-client:
+    image: boilerplate-with-client
+    volumes:
+      - ./logs:/usr/src/app/logs
+    ports:
+      - "3000:3000"
