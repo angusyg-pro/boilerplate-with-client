@@ -4,7 +4,7 @@
   angular
     .module('frontend')
     .constant('SERVER_API', {
-      URL: 'http://localhost:3000', // TODO à modifier
+      URL: '@@SERVER_URL',
     })
     .config(RoutingConfig)
 

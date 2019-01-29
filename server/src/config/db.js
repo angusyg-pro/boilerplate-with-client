@@ -20,7 +20,7 @@ const server = process.env.DB_URL || '127.0.0.1:27017';
  * @type {string}
  * @default boilerplate-with-client
  */
-const database = process.env.DB_NAME || 'boilerplate-with-client'; // TODO à modifier
+const database = process.env.DB_NAME || 'boilerplate-with-client';
 
 // Surcharge la Promise par défaut de mongoose avec la Promise standard de Node
 mongoose.Promise = Promise;

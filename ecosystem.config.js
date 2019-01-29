@@ -11,9 +11,19 @@ module.exports = {
     out_file: './logs/out.log',
     log_file: './logs/combined.log',
     merge_logs: true,
-    env: {},
+    env: {
+      NODE_ENV: 'development',
+      PORT: 3000,
+      DB_URL: 'localhost:27017',
+      DB_NAME: 'boilerplate-with-client',
+      SERVER_URL: 'http://localhost:3000',
+    },
     env_production: {
       NODE_ENV: 'production',
+      PORT: 3000,
+      DB_URL: 'localhost:27017',
+      DB_NAME: 'boilerplate-with-client',
+      SERVER_URL: 'http://localhost:3000',
     },
   }],
 };
